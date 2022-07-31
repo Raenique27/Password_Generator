@@ -4,41 +4,28 @@
     Uppers: "BCAGFEJIHPONMLSQRUTVXWZY",
     Numbers: "1234567890",
     Characters: "!#@$*^&%"
+   };
 
-   }
+var combinedCharacterSets  = ""
 
-function writePasswordPrompt () {
+function generatePassword () {
+  var finalPassword = ""
   var passwordLengthPrompt = window.prompt("Choose length of password !");
   passwordLengthPrompt= parseInt(passwordLengthPrompt);
   
   if (passwordLengthPrompt < 8) {
     alert("Password length needs to be at least 8 characters. Please choose length of password again !");
-    return writePasswordPrompt();
+      return null
 
   } else if (passwordLengthPrompt > 128) {
       alert("Password length cannot be more than 128 characters. Please choose length of password again !");
-      return writePasswordPrompt();
-
-    }
+      return null
+    } 
 
   console.log(passwordLengthPrompt);
-};
 
-function passwordCharacterTypes () {
-  var confirmCharacters = window.confirm ("Would you like you like to include lowercase, uppercase, numeric, and/or special characters ?");
-
-  if (confirmCharacters === "Ok") {
-      
-  }
   
-}
-
-
-function generatePassword() {
-  writePasswordPrompt();
-  passwordCharacterTypes();
-}
-
+};
 
 
 
