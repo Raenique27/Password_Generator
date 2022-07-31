@@ -24,7 +24,11 @@ function generatePassword () {
 
   console.log(passwordLengthPrompt);
 
-  
+  var confirmLowers = window.confirm ("Would you like to include lowercase letters ?");
+  var confirmUppers = window.confirm ("Would you like to include uppercase letters ? ");
+  var confirmNumbers = window.confirm ("Would you like to include numbers ?");
+  var confirmCharacters = window.confirm ("Would you like to include special characters ?");
+
 };
 
 
