@@ -46,6 +46,10 @@ function generatePassword () {
     alert("Include at least one of the character sets to generate a password")
   }
 
+  for (var i=0; i < passwordLengthPrompt; i++) {
+    finalPassword += combinedCharacterSets.charAt(Math.floor(Math.random() * combinedCharacterSets.length));
+  }
+
 };
 
 
