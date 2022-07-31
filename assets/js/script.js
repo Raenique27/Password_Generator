@@ -21,6 +21,10 @@ function generatePassword () {
       alert("Password length cannot be more than 128 characters. Please choose length of password again !");
       return null
     } 
+      else if (!passwordLengthPrompt) {
+      alert("Length of password needs to be chosen");
+      return null
+      }
 
   console.log(passwordLengthPrompt);
 
