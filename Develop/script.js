@@ -42,6 +42,10 @@ function generatePassword () {
     combinedCharacterSets += passwordCriteria["Characters"]
   }
 
+  if (confirmLowers === false && confirmUppers === false && confirmNumbers === false && confirmCharacters=== false) {
+    alert("Include at least one of the character sets to generate a password")
+  }
+
 };
 
 
