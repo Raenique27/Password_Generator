@@ -29,6 +29,19 @@ function generatePassword () {
   var confirmNumbers = window.confirm ("Would you like to include numbers ?");
   var confirmCharacters = window.confirm ("Would you like to include special characters ?");
 
+  if (confirmLowers) {
+    combinedCharacterSets += passwordCriteria["Lowers"]
+  }
+  if (confirmUppers) {
+    combinedCharacterSets += passwordCriteria["Uppers"]
+  }
+  if (confirmNumbers) {
+    combinedCharacterSets += passwordCriteria["Numbers"]
+  }
+  if (confirmCharacters) {
+    combinedCharacterSets += passwordCriteria["Characters"]
+  }
+
 };
 
 
