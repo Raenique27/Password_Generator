@@ -50,6 +50,8 @@ function generatePassword () {
     finalPassword += combinedCharacterSets.charAt(Math.floor(Math.random() * combinedCharacterSets.length));
   }
 
+  return finalPassword
+
 };
 
 
